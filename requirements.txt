@@ -1,0 +1,6 @@
+pandas==2.2.2
+scikit-learn==1.4.2
+flask==3.0.3
+gunicorn==21.2.0
+pdfplumber==0.11.0
+numpy==1.26.4

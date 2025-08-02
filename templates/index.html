@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KCET Admission Predictor</title>
+</head>
+<body>
+    <h1>🎓 KCET Admission Predictor</h1>
+    <form method="POST">
+        <label>Round:</label><br>
+        <input type="text" name="round_input" placeholder="e.g. Round 1, Mock" required><br><br>
+
+        <label>Category:</label><br>
+        <input type="text" name="category_input" placeholder="e.g. GM, 2AR" required><br><br>
+
+        <label>KCET Rank:</label><br>
+        <input type="number" name="cutoff_rank" placeholder="e.g. 12345" required><br><br>
+
+        <button type="submit">Predict</button>
+    </form>
+
+    {% if prediction %}
+        <h2>🎯 Prediction:</h2>
+        <p>🏫 College: {{ prediction.college }}</p>
+        <p>📘 Branch: {{ prediction.branch }}</p>
+    {% endif %}
+
+    {% if error %}
+        <p style="color:red;">⚠️ {{ error }}</p>
+    {% endif %}
+</body>
+</html>
