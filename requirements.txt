@@ -3,7 +3,8 @@ scikit-learn==1.2.2
 numpy==1.23.5
 flask
 gunicorn
-pdfplumber==0.11.0
 joblib
+pdfplumber==0.11.0
+
 
 
