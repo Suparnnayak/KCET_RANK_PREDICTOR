@@ -1,8 +1,9 @@
 pandas==1.5.3
-scikit-learn==1.4.2
 flask==3.0.3
 gunicorn==21.2.0
 pdfplumber==0.11.0
-numpy==1.26.4
 joblib
+scikit-learn==1.2.2
+numpy==1.23.5
+flask
 gunicorn
